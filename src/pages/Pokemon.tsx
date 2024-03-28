@@ -41,13 +41,13 @@ if (isLoading || !pokemon){
   <div className={styles.pokemon}>
     <main className={styles.pokemonInfo}>
       <div className={styles.pokemonTitle}>{pokemon?.name?.toUpperCase()}</div>
-      <div>Nr. {pokemon?.id}</div>
+      <div><h3>Nr. {pokemon?.id}</h3></div>
       <div>
         <img src={pokemon?.imgSrc} alt={pokemon?.name} className={styles.pokemonInfoImg}/>
       </div>
-      <div>HP: {pokemon?.hp}</div>
-      <div>Attack: {pokemon?.attack}</div>
-      <div>Defense: {pokemon?.defense}</div>
+      <div><h3 className={styles.pokemonInfoText}>HP:<span> {pokemon?.hp}</span></h3></div>
+      <div><h3 className={styles.pokemonInfoText}>Attack:<span> {pokemon?.attack}</span></h3></div>
+      <div><h3 className={styles.pokemonInfoText}>Defense:<span> {pokemon?.defense}</span></h3></div>
     </main>
   </div>
   <Footer />
