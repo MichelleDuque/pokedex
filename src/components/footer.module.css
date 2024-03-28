@@ -14,9 +14,14 @@
     align-items: center;
     text-align: center;
     text-decoration: none;
-    color: #292929;
+    color: #ffffff;
     margin: 10px 0;
     font-size: 12px;
+    font-weight: 800;
+}
+
+.footerLink:hover{
+    color: #000000;
 }
 
 .footerIcon{
