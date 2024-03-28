@@ -10,6 +10,10 @@
     align-items: center;
 }
 
+.listItem img{
+    image-rendering: pixelated; 
+}
+
 .listItem >:first-child{
     margin-right: 15px;
     width: 50px;
@@ -45,5 +49,22 @@
 }
 
 @media (min-width: 768px) {
+
+    .listItem >:first-child{
+        margin-right: 15px;
+        width: 70px;
+    }
+
+    .app main{
+        padding: 5px;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .nav{
+        display: flex;
+        flex-direction: column;   
+    }
 
 }
