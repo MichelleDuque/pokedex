@@ -28,3 +28,10 @@ body{
   height: 100%;
   overflow: auto;
 }
+
+@media (min-width: 768px) {
+
+  .app main{
+      padding-top: 0px;
+  }
+}
