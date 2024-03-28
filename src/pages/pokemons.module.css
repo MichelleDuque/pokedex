@@ -64,7 +64,37 @@
 @media (min-width: 1200px) {
     .nav{
         display: flex;
-        flex-direction: column;   
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+       justify-content: center;  
     }
 
+    .listItem{
+        margin: 20px;
+        width: calc(100% / 4);
+        background-color: aliceblue;
+        border: 3px solid #e4e4e4;
+    }
+    .listItem:hover {
+        background-color: rgb(254, 72, 72);
+        color: #fff;
+        border: 3px solid #000000;
+    }
+    
+    .listItem:hover .listItemText span{
+        color: #fff;
+    }
+    
+    .listItemText{
+        text-align: center;
+    }
+
+    .listItemText >:first-child{
+        font-size: 1.2rem;
+    }
+
+    .listItemText >:last-child{
+        font-size: 1rem;
+    }
 }
